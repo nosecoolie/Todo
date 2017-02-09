@@ -1,8 +1,8 @@
-# [Poker](https://nosecoolie.github.io/todo/)
+# [Poker](https://nosecoolie.github.io/Todo/)
 A simple todo app.
 
 ### Installation
-* You don't, just go [here](https://nosecoolie.github.io/todo/)
+* You don't, just go [here](https://nosecoolie.github.io/Todo/)
 * Or you can clone this repo and try npm install, npm run dev.
 
 ### Dependencies
