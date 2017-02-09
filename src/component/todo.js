@@ -90,6 +90,11 @@ var Todo = React.createClass({
         }
         this.setState({ todos })
     },
+    handleKeyDown (e) {
+        if (e.keyCode === 13) {
+            this.handleAddTodoClick()
+        }
+    },
     render () {
         let { todos, showCompletedOnly, showActiveOnly, newTodoTitle } = this.state
 
@@ -132,7 +137,7 @@ var Todo = React.createClass({
                 </ul>
                 <button className='control button is-danger' onClick={this.clearCompletedTodos}>Clear all completed todos</button>
                 <div className='new-todo-wrapper control has-addons'>
-                    <input type='text' className='input' value={newTodoTitle} onChange={this.handleNewTodoChange} placeholder='Add your todo here' />
+                    <input type='text' className='input' value={newTodoTitle} onChange={this.handleNewTodoChange} onKeyDown={this.handleKeyDown} placeholder='Add your todo here' />
                     <button className='button is-primary' onClick={this.handleAddTodoClick}>Add</button>
                 </div>
             </div>
