@@ -21941,6 +21941,11 @@
 	        }
 	        this.setState({ todos: todos });
 	    },
+	    handleKeyDown: function handleKeyDown(e) {
+	        if (e.keyCode === 13) {
+	            this.handleAddTodoClick();
+	        }
+	    },
 	    render: function render() {
 	        var _this = this;
 
@@ -22031,7 +22036,7 @@
 	            _react2.default.createElement(
 	                'div',
 	                { className: 'new-todo-wrapper control has-addons' },
-	                _react2.default.createElement('input', { type: 'text', className: 'input', value: newTodoTitle, onChange: this.handleNewTodoChange, placeholder: 'Add your todo here' }),
+	                _react2.default.createElement('input', { type: 'text', className: 'input', value: newTodoTitle, onChange: this.handleNewTodoChange, onKeyDown: this.handleKeyDown, placeholder: 'Add your todo here' }),
 	                _react2.default.createElement(
 	                    'button',
 	                    { className: 'button is-primary', onClick: this.handleAddTodoClick },

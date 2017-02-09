@@ -1,4 +1,4 @@
-# [Poker](https://nosecoolie.github.io/Todo/)
+# [Todo](https://nosecoolie.github.io/Todo/)
 A simple todo app.
 
 ### Installation
